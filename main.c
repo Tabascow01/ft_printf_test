@@ -34,12 +34,38 @@
 //#include "ft_test_upu.c"
 
 
-int		main(void)
+int		main(int argc, char *argv[])
 {
-	ft_test_d();
-	ft_putstr("\n/!\\[ft_test_d OK]/!\\\n");
-	ft_test_i();
-	ft_putstr("\n/!\\[ft_test_i OK]/!\\\n");
+	if (argc == 2 && ft_strcmp(argv[1], "-t") == 0)
+	{
+		ft_test_d();
+		ft_putstr("\n/!\\[ft_test_d OK]/!\\\n");
+//		ft_test_i();
+//		ft_putstr("\n/!\\[ft_test_i OK]/!\\\n");
+	}
+	else if (argc == 2 && ft_strcmp(argv[1], "-l") == 0)
+	{
+		pid_t	pid;
+		int		tmp;
+		char	*procid;
+		char	*leaks;
+		char	*command;
+
+		leaks = ft_strnew(6);
+		leaks = ft_strcpy(leaks, "leaks ");
+		pid = getpid();
+		tmp = (int)pid;
+		procid = ft_itoa_base(tmp, 10);
+		command = ft_strjoin(leaks, procid);
+		ft_strdel(&leaks);
+		ft_strdel(&procid);
+		close(1);
+		ft_test_d();
+//		ft_test_i();
+		dup(2);
+		system(command);
+	}
+
 /*
 	int		orret;
 	int		ftret;
@@ -54,36 +80,18 @@ int		main(void)
 	setlocale(LC_ALL,"en_US.UTF-8");
 
 	// L"Á±≥"
-
 	ftret = ft_printf("Ft_[%d]\n", 0);
 	orret = printf("Or_[%d]\n", 0);
 
-
 	printf("Ft[%d]\nOr[%d]\n",ftret,orret);
 */
-	/**************************/
+
+/**************************/
 	/* LEAKS_HUNTER_UNIT_TEST */
 	/**************************/
-/*
-	pid_t	pid;
-	int		tmp;
-	char	*procid;
-	char	*leaks;
-	char	*command;
-
-	leaks = ft_strnew(6);
-	leaks = ft_strcpy(leaks, "leaks ");
-	pid = getpid();
-	tmp = (int)pid;
-	procid = ft_itoa_base(tmp, 10);
-	command = ft_strjoin(leaks, procid);
-	ft_strdel(&leaks);
-	ft_strdel(&procid);
 
 	//ft_test_prct();
-
 	//ft_test_c();
-
 	//ft_test_upd();
 	//ft_test_x();
 	//ft_test_upx();
@@ -91,7 +99,6 @@ int		main(void)
 	//ft_test_o(); // LEAKED
 	//ft_test_s(); // ERROR ALLOCATION
 	//ft_test_p(); // LEAKED
-*/
 /*
 	ft_test_upo();
 	ft_test_upu();
@@ -133,8 +140,6 @@ int		main(void)
 	ft_printf("%s%s\\n", "test", "test");
 	ft_printf("%s%s%s\\n", "test", "test", "test");
 	ft_printf("%C\\n", 15000);
-
-	system(command);
 */
 	return (0);
 }
