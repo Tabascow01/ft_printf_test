@@ -18,12 +18,12 @@
 #include <locale.h>
 
 //#include "ft_test_prct.c"
-//#include "ft_test_c.c"
+#include "ft_test_c.c"
 #include "ft_test_d.c"
 #include "ft_test_i.c"
 //#include "ft_test_o.c"
-//#include "ft_test_p.c"
-//#include "ft_test_s.c"
+#include "ft_test_p.c"
+#include "ft_test_s.c"
 //#include "ft_test_u.c"
 //#include "ft_test_x.c"
 //#include "ft_test_upx.c"
@@ -39,9 +39,11 @@ int		main(int argc, char *argv[])
 	if (argc == 2 && ft_strcmp(argv[1], "-t") == 0)
 	{
 		ft_test_d();
-		ft_putstr("\n/!\\[ft_test_d OK]/!\\\n");
-//		ft_test_i();
-//		ft_putstr("\n/!\\[ft_test_i OK]/!\\\n");
+		//ft_test_i();
+		ft_test_c();
+		ft_test_s();
+		ft_test_p();
+		ft_putstr("\n/!\\[Test Done]/!\\\n");
 	}
 	else if (argc == 2 && ft_strcmp(argv[1], "-l") == 0)
 	{
@@ -62,6 +64,9 @@ int		main(int argc, char *argv[])
 		close(1);
 		ft_test_d();
 //		ft_test_i();
+		ft_test_c();
+		ft_test_s();
+		ft_test_p();
 		dup(2);
 		system(command);
 	}

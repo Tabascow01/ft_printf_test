@@ -18,14 +18,8 @@
 
 int		main(void)
 {
-	printf("test[%-.7d]\n",42);
-	printf("test[%-7.0d]\n",42);
-	printf("test[%-7.7d]\n",42);
-	printf("test[%-7.2d]\n",42);
-	printf("test[%-2.7d]\n",42);
-	printf("test[%-2.2d]\n",42);
-	printf("test[%-.0d]\n",42);
-	printf("test[%-5.7d]\n",42);
-	printf("test[%-7.5d]\n",42);
+	printf("test[%c]\n",42);
+	printf("test[%5c]\n",42);
+	printf("test[%-5c]\n",42);
 	return (0);
 }

@@ -14,5 +14,37 @@
 
 void	ft_test_s(void)
 {
+	int ftret;
+	int orret;
 
+	ftret = 0;
+	orret = 0;
+
+	ftret = ft_printf("This is a string\n");
+	orret = printf("This is a string\n");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%s\n", NULL);
+	orret = printf("%s\n", NULL);
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%s\n","This is a string");
+	orret = printf("%s\n","This is a string");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%s is a string\n", "This");
+	orret = printf("%s is a string\n", "This");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%.s is a string\n","This");
+	orret = printf("%.s is a string\n","This");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%.2s is a string\n","This");
+	orret = printf("%.2s is a string\n","This");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%2.s is a string\n","This");
+	orret = printf("%2.s is a string\n","This");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
 }

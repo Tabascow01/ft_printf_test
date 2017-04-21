@@ -14,5 +14,22 @@
 
 void	ft_test_c(void)
 {
+	int ftret;
+	int orret;
 
+	ftret = 0;
+	orret = 0;
+
+
+	ftret = ft_printf("[%c][%c]", 42, 0);
+	orret = printf("[%c][%c]", 42, 0);
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("[%5c][%5c]", 42, 0);
+	orret = printf("[%5c][%5c]", 42, 0);
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("[%-5c][%-5c]", 42, 0);
+	orret = printf("[%-5c][%-5c]", 42, 0);
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
 }
