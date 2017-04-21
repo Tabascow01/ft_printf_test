@@ -70,7 +70,10 @@ int		main(int argc, char *argv[])
 		dup(2);
 		system(command);
 	}
-
+	else
+	{
+		ft_printf("Usage:\n[option] -t {Test}\n[option] -l {Leaks}\n");
+	}
 /*
 	int		orret;
 	int		ftret;
