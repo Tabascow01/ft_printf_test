@@ -14,18 +14,65 @@
 
 void	ft_test_prct(void)
 {
-	ft_printf("%%");
+	int ftret;
+	int orret;
+
+	ftret = 0;
+	orret = 0;
+
+	ftret = ft_printf("[%%]\n");
+	orret = printf("[%%]\n");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
 	ft_printf("%%%");
-	ft_printf("% %");
-	ft_printf("%   %");
-	ft_printf("%0%");
-	ft_printf("%5%");
-	ft_printf("%15%");
-	ft_printf("%100%");
-	ft_printf("%1000%");
-	ft_printf("%-%");
-	ft_printf("%-5%");
-	ft_printf("%-15%");
-	ft_printf("%-100%");
-	ft_printf("%-1000%");
+	orret = printf("[%%]\n");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("[% %]\n");
+	orret = printf("[% %]\n");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("[%   %]\n");
+	orret = printf("[%   %]\n");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("[%0%]\n");
+	orret = printf("[%0%]\n");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("[%5%]\n");
+	orret = printf("[%5%]\n");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("[%10%]\n");
+	orret = printf("[%10%]\n");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("[%100%]\n");
+	orret = printf("[%100%]\n");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("[%1000%]\n");
+	orret = printf("[%1000%]\n");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("[%-%]\n");
+	orret = printf("[%-%]\n");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("[%-5%]\n");
+	orret = printf("[%-5%]\n");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("[%-15%]\n");
+	orret = printf("[%-15%]\n");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("[%-100%]\n");
+	orret = printf("[%-100%]\n");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("[%-1000%]\n");
+	orret = printf("[%-1000%]\n");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
 }
