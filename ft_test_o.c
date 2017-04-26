@@ -565,13 +565,493 @@ void	ft_test_o(void)
 	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
 
 
+	printf("\nTEST flags [0][dgt.dgt]\n");
 
-	printf("\nTEST flags [ ][#][0][dgt.dgt]\n");
+	ftret = ft_printf("Ft[%0.0o]\n", 0);
+	orret = printf("Or[%0.0o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%01.1o]\n", 42);
+	orret = printf("Or[%01.1o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%02.2o]\n", 4242);
+	orret = printf("Or[%02.2o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%04.4o]\n", 424242);
+	orret = printf("Or[%04.4o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%0.1o]\n", 0);
+	orret = printf("Or[%0.1o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%01.2o]\n", 42);
+	orret = printf("Or[%01.2o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%02.4o]\n", 4242);
+	orret = printf("Or[%02.4o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%04.6o]\n", 424242);
+	orret = printf("Or[%04.6o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%0.10o]\n", 0);
+	orret = printf("Or[%0.10o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%01.10o]\n", 42);
+	orret = printf("Or[%01.10o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%02.10o]\n", 4242);
+	orret = printf("Or[%02.10o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%04.10o]\n", 424242);
+	orret = printf("Or[%04.10o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%01.1o]\n", 0);
+	orret = printf("Or[%01.1o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%02.2o]\n", 42);
+	orret = printf("Or[%02.2o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%04.4o]\n", 4242);
+	orret = printf("Or[%04.4o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%06.6o]\n", 424242);
+	orret = printf("Or[%06.6o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%01.0o]\n", 0);
+	orret = printf("Or[%01.0o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%02.1o]\n", 42);
+	orret = printf("Or[%02.1o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%04.2o]\n", 4242);
+	orret = printf("Or[%04.2o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%06.4o]\n", 424242);
+	orret = printf("Or[%06.4o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%010.o]\n", 0);
+	orret = printf("Or[%010.o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%010.1o]\n", 42);
+	orret = printf("Or[%010.1o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%010.2o]\n", 4242);
+	orret = printf("Or[%010.2o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%010.4o]\n", 424242);
+	orret = printf("Or[%010.4o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%010.1o]\n", 0);
+	orret = printf("Or[%010.1o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%010.2o]\n", 42);
+	orret = printf("Or[%010.2o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%010.4o]\n", 4242);
+	orret = printf("Or[%010.4o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%010.6o]\n", 424242);
+	orret = printf("Or[%010.6o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%010.10o]\n", 0);
+	orret = printf("Or[%010.10o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%010.10o]\n", 42);
+	orret = printf("Or[%010.10o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%010.10o]\n", 4242);
+	orret = printf("Or[%010.10o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%010.10o]\n", 424242);
+	orret = printf("Or[%010.10o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%010.15o]\n", 0);
+	orret = printf("Or[%010.15o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%010.15o]\n", 42);
+	orret = printf("Or[%010.15o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%010.15o]\n", 4242);
+	orret = printf("Or[%010.15o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%010.15o]\n", 424242);
+	orret = printf("Or[%010.15o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%015.10o]\n", 0);
+	orret = printf("Or[%015.10o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%015.10o]\n", 42);
+	orret = printf("Or[%015.10o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%015.10o]\n", 4242);
+	orret = printf("Or[%015.10o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%015.10o]\n", 424242);
+	orret = printf("Or[%015.10o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
 
 
+	printf("\nTEST flags [#][0][dgt.dgt]\n");
 
-	printf("\nTEST flags [ ][#][-dgt.dgt]\n");
+	ftret = ft_printf("Ft[%#0.0o]\n", 0);
+	orret = printf("Or[%#0.0o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
 
+	ftret = ft_printf("Ft[%#01.1o]\n", 42);
+	orret = printf("Or[%#01.1o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#02.2o]\n", 4242);
+	orret = printf("Or[%#02.2o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#04.4o]\n", 424242);
+	orret = printf("Or[%#04.4o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#0.1o]\n", 0);
+	orret = printf("Or[%#0.1o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#01.2o]\n", 42);
+	orret = printf("Or[%#01.2o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#02.4o]\n", 4242);
+	orret = printf("Or[%#02.4o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#04.6o]\n", 424242);
+	orret = printf("Or[%#04.6o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#0.10o]\n", 0);
+	orret = printf("Or[%#0.10o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#01.10o]\n", 42);
+	orret = printf("Or[%#01.10o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#02.10o]\n", 4242);
+	orret = printf("Or[%#02.10o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#04.10o]\n", 424242);
+	orret = printf("Or[%#04.10o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#01.1o]\n", 0);
+	orret = printf("Or[%#01.1o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#02.2o]\n", 42);
+	orret = printf("Or[%#02.2o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#04.4o]\n", 4242);
+	orret = printf("Or[%#04.4o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#06.6o]\n", 424242);
+	orret = printf("Or[%#06.6o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#01.0o]\n", 0);
+	orret = printf("Or[%#01.0o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#02.1o]\n", 42);
+	orret = printf("Or[%#02.1o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#04.2o]\n", 4242);
+	orret = printf("Or[%#04.2o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#06.4o]\n", 424242);
+	orret = printf("Or[%#06.4o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#010.o]\n", 0);
+	orret = printf("Or[%#010.o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#010.1o]\n", 42);
+	orret = printf("Or[%#010.1o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#010.2o]\n", 4242);
+	orret = printf("Or[%#010.2o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#010.4o]\n", 424242);
+	orret = printf("Or[%#010.4o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#010.1o]\n", 0);
+	orret = printf("Or[%#010.1o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#010.2o]\n", 42);
+	orret = printf("Or[%#010.2o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#010.4o]\n", 4242);
+	orret = printf("Or[%#010.4o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#010.6o]\n", 424242);
+	orret = printf("Or[%#010.6o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#010.10o]\n", 0);
+	orret = printf("Or[%#010.10o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#010.10o]\n", 42);
+	orret = printf("Or[%#010.10o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#010.10o]\n", 4242);
+	orret = printf("Or[%#010.10o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#010.10o]\n", 424242);
+	orret = printf("Or[%#010.10o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#010.15o]\n", 0);
+	orret = printf("Or[%#010.15o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#010.15o]\n", 42);
+	orret = printf("Or[%#010.15o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#010.15o]\n", 4242);
+	orret = printf("Or[%#010.15o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#010.15o]\n", 424242);
+	orret = printf("Or[%#010.15o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#015.10o]\n", 0);
+	orret = printf("Or[%#015.10o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#015.10o]\n", 42);
+	orret = printf("Or[%#015.10o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#015.10o]\n", 4242);
+	orret = printf("Or[%#015.10o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#015.10o]\n", 424242);
+	orret = printf("Or[%#015.10o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+
+	printf("\nTEST flags [#][-dgt.dgt]\n");
+
+	ftret = ft_printf("Ft[%#-.0o]\n", 0);
+	orret = printf("Or[%#-.0o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-1.1o]\n", 42);
+	orret = printf("Or[%#-1.1o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-2.2o]\n", 4242);
+	orret = printf("Or[%#-2.2o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-4.4o]\n", 424242);
+	orret = printf("Or[%#-4.4o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-.1o]\n", 0);
+	orret = printf("Or[%#-.1o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-1.2o]\n", 42);
+	orret = printf("Or[%#-1.2o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-2.4o]\n", 4242);
+	orret = printf("Or[%#-2.4o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-4.6o]\n", 424242);
+	orret = printf("Or[%#-4.6o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-.10o]\n", 0);
+	orret = printf("Or[%#-.10o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-1.10o]\n", 42);
+	orret = printf("Or[%#-1.10o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-2.10o]\n", 4242);
+	orret = printf("Or[%#-2.10o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-4.10o]\n", 424242);
+	orret = printf("Or[%#-4.10o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-1.1o]\n", 0);
+	orret = printf("Or[%#-1.1o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-2.2o]\n", 42);
+	orret = printf("Or[%#-2.2o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-4.4o]\n", 4242);
+	orret = printf("Or[%#-4.4o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-6.6o]\n", 424242);
+	orret = printf("Or[%#-6.6o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-1.0o]\n", 0);
+	orret = printf("Or[%#-1.0o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-2.1o]\n", 42);
+	orret = printf("Or[%#-.1o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-4.2o]\n", 4242);
+	orret = printf("Or[%#-4.2o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-6.4o]\n", 424242);
+	orret = printf("Or[%#-6.4o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-10.o]\n", 0);
+	orret = printf("Or[%#-10.o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-10.1o]\n", 42);
+	orret = printf("Or[%#-10.1o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-10.2o]\n", 4242);
+	orret = printf("Or[%#-10.2o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-10.4o]\n", 424242);
+	orret = printf("Or[%#-10.4o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-10.1o]\n", 0);
+	orret = printf("Or[%#-10.1o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-10.2o]\n", 42);
+	orret = printf("Or[%#-10.2o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-10.4o]\n", 4242);
+	orret = printf("Or[%#-10.4o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-10.6o]\n", 424242);
+	orret = printf("Or[%#-10.6o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-10.10o]\n", 0);
+	orret = printf("Or[%#-10.10o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-10.10o]\n", 42);
+	orret = printf("Or[%#-10.10o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-10.10o]\n", 4242);
+	orret = printf("Or[%#-10.10o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-10.10o]\n", 424242);
+	orret = printf("Or[%#-10.10o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-10.15o]\n", 0);
+	orret = printf("Or[%#-10.15o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-10.15o]\n", 42);
+	orret = printf("Or[%#-10.15o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-10.15o]\n", 4242);
+	orret = printf("Or[%#-10.15o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-10.15o]\n", 424242);
+	orret = printf("Or[%#-10.15o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-15.10o]\n", 0);
+	orret = printf("Or[%#-15.10o]\n", 0);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-15.10o]\n", 42);
+	orret = printf("Or[%#-15.10o]\n", 42);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-15.10o]\n", 4242);
+	orret = printf("Or[%#-15.10o]\n", 4242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
+
+	ftret = ft_printf("Ft[%#-15.10o]\n", 424242);
+	orret = printf("Or[%#-15.10o]\n", 424242);
+	printf("Ft[%d]\nOr[%d]\n----------------------------------------\n",ftret,orret);
 
 
 	printf("\nTEST multiple simple [o]\n");
