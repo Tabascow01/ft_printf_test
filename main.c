@@ -59,8 +59,9 @@ int		main(int argc, char *argv[])
 			ft_test_p();
 //			ft_test_x();
 //			ft_test_o();
-//			ft_test_d();
-//			ft_test_i();
+//			ft_test_u();
+			ft_test_d();
+			ft_test_i();
 		}
 		else if (argc >= 2 && ft_strcmp(argv[1], "-l") == 0)
 		{
@@ -82,8 +83,9 @@ int		main(int argc, char *argv[])
 			ft_test_c();
 			ft_test_s();
 			ft_test_p();
-			ft_test_x();
-			ft_test_o();
+//			ft_test_x();
+//			ft_test_o();
+//			ft_test_u();
 			ft_test_d();
 			ft_test_i();
 			system(command);

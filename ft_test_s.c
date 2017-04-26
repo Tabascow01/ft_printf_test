@@ -47,4 +47,108 @@ void	ft_test_s(void)
 	ftret = ft_printf("%2.s is a string\n","This");
 	orret = printf("%2.s is a string\n","This");
 	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%-1s is a string\n","This");
+	orret = printf("%-1s is a string\n","This");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%-4s is a string\n","This");
+	orret = printf("%-4s is a string\n","This");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%-10s is a string\n","This");
+	orret = printf("%-10s is a string\n","This");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%-2.2s is a string\n","This");
+	orret = printf("%-2.2s is a string\n","This");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%-2.5s is a string\n","This");
+	orret = printf("%-2.5s is a string\n","This");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%-10.2s is a string\n","This");
+	orret = printf("%-10.2s is a string\n","This");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%-5.10s is a string\n","This");
+	orret = printf("%-5.10s is a string\n","This");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%-5.2s is a string\n","This");
+	orret = printf("%-5.2s is a string\n","This");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%-.2s is a string\n","This");
+	orret = printf("%-.2s is a string\n","This");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%3s is a string\n","This");
+	orret = printf("%3s is a string\n","This");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%3s is a string\n","");
+	orret = printf("%3s is a string\n","");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%10s is a string\n","This");
+	orret = printf("%10s is a string\n","This");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%10s is a string\n","");
+	orret = printf("%10s is a string\n","");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%.10s is a string\n","This");
+	orret = printf("%.10s is a string\n","This");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%.10s is a string\n","");
+	orret = printf("%.10s is a string\n","");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%.s is a string\n","");
+	orret = printf("%.s is a string\n","");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%.2s is a string\n","");
+	orret = printf("%.2s is a string\n","");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%2.s is a string\n","");
+	orret = printf("%2.s is a string\n","");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%-1s is a string\n","");
+	orret = printf("%-1s is a string\n","");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%-4s is a string\n","");
+	orret = printf("%-4s is a string\n","");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%-10s is a string\n","");
+	orret = printf("%-10s is a string\n","");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%-2.2s is a string\n","");
+	orret = printf("%-2.2s is a string\n","");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%-2.5s is a string\n","");
+	orret = printf("%-2.5s is a string\n","");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%-10.2s is a string\n","");
+	orret = printf("%-10.2s is a string\n","");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%-5.2s is a string\n","");
+	orret = printf("%-5.2s is a string\n","");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
+
+	ftret = ft_printf("%-.2s is a string\n","");
+	orret = printf("%-.2s is a string\n","");
+	printf("Ft[%d]\nOr[%d]\n", ftret, orret);
 }
