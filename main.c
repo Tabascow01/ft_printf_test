@@ -59,7 +59,7 @@ int		main(int argc, char *argv[])
 			ft_test_p();
 			ft_test_x();
 			ft_test_o();
-//			ft_test_u();
+			ft_test_u();
 			ft_test_d();
 			ft_test_i();
 		}
@@ -85,7 +85,7 @@ int		main(int argc, char *argv[])
 			ft_test_p();
 			ft_test_x();
 			ft_test_o();
-//			ft_test_u();
+			ft_test_u();
 			ft_test_d();
 			ft_test_i();
 			system(command);
