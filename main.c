@@ -28,15 +28,14 @@
 #include "ft_test_u.c"
 #include "ft_test_x.c"
 #include "ft_test_o.c"
-//#include "ft_test_upx.c"
+#include "ft_test_upx.c"
 //#include "ft_test_upo.c"
 //#include "ft_test_upc.c"
 //#include "ft_test_upd.c"
-//#include "ft_test_upo.c"
 //#include "ft_test_upu.c"
-//#include "ft_test_j.c"
-//#include "ft_test_z.c"
-//#include "ft_test_hlhhll.c"
+#include "ft_test_j.c"
+#include "ft_test_z.c"
+#include "ft_test_hlhhll.c"
 
 int		main(int argc, char *argv[])
 {
@@ -58,10 +57,14 @@ int		main(int argc, char *argv[])
 			ft_test_s();
 			ft_test_p();
 			ft_test_x();
+			ft_test_upx();
 			ft_test_o();
 			ft_test_u();
 			ft_test_d();
 			ft_test_i();
+//			ft_test_j();
+//			ft_test_z();
+//			ft_test_hlhhll();
 		}
 		else if (argc >= 2 && ft_strcmp(argv[1], "-l") == 0)
 		{
@@ -84,10 +87,14 @@ int		main(int argc, char *argv[])
 			ft_test_s();
 			ft_test_p();
 			ft_test_x();
+			ft_test_upx();
 			ft_test_o();
 			ft_test_u();
 			ft_test_d();
 			ft_test_i();
+//			ft_test_j();
+//			ft_test_z();
+//			ft_test_hlhhll();
 			system(command);
 		}
 		else
