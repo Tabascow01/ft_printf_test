@@ -29,10 +29,7 @@
 #include "ft_test_x.c"
 #include "ft_test_o.c"
 #include "ft_test_upx.c"
-//#include "ft_test_upo.c"
-//#include "ft_test_upc.c"
-//#include "ft_test_upd.c"
-//#include "ft_test_upu.c"
+#include "ft_test_up_dou.c"
 #include "ft_test_j.c"
 #include "ft_test_z.c"
 #include "ft_test_hlhhll.c"
@@ -65,6 +62,7 @@ int		main(int argc, char *argv[])
 			ft_test_j();
 			ft_test_z();
 			ft_test_hlhhll();
+			ft_test_up_dou();
 		}
 		else if (argc >= 2 && ft_strcmp(argv[1], "-l") == 0)
 		{
@@ -95,6 +93,7 @@ int		main(int argc, char *argv[])
 			ft_test_j();
 			ft_test_z();
 			ft_test_hlhhll();
+			ft_test_up_dou();
 			system(command);
 		}
 		else
