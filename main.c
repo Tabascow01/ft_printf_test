@@ -36,9 +36,11 @@
 
 int		main(int argc, char *argv[])
 {
-	FILE *fic;
+	FILE	*fic;
+	char	c;
 
 	fic = NULL;
+	c = 0;
 	if (argc == 3 && ft_strcmp(argv[2], "-q") == 0)
 	{
 		fic = fopen("./ft_printf_test_LOG.txt", "w+");
@@ -50,19 +52,84 @@ int		main(int argc, char *argv[])
 		if (argc >= 2 && ft_strcmp(argv[1], "-t") == 0)
 		{
 			ft_test_prct();
-			ft_test_c();
-			ft_test_s();
-			ft_test_p();
-			ft_test_x();
-			ft_test_upx();
-			ft_test_o();
-			ft_test_u();
-			ft_test_d();
-			ft_test_i();
-			ft_test_j();
-			ft_test_z();
-			ft_test_hlhhll();
-			ft_test_up_dou();
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+				ft_test_c();
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+				ft_test_s();
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+				ft_test_p();
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+				ft_test_x();
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+				ft_test_upx();
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+				ft_test_o();
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+				ft_test_u();
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+				ft_test_d();
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+				ft_test_i();
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+				ft_test_j();
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+				ft_test_z();
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+				ft_test_hlhhll();
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+				ft_test_up_dou();
+			else
+				return (0);
 		}
 		else if (argc >= 2 && ft_strcmp(argv[1], "-l") == 0)
 		{
@@ -81,20 +148,124 @@ int		main(int argc, char *argv[])
 			ft_strdel(&leaks);
 			ft_strdel(&procid);
 			ft_test_prct();
-			ft_test_c();
-			ft_test_s();
-			ft_test_p();
-			ft_test_x();
-			ft_test_upx();
-			ft_test_o();
-			ft_test_u();
-			ft_test_d();
-			ft_test_i();
-			ft_test_j();
-			ft_test_z();
-			ft_test_hlhhll();
-			ft_test_up_dou();
 			system(command);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+			{
+				ft_test_c();
+				system(command);
+			}
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+			{
+				ft_test_s();
+				system(command);
+			}
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+			{
+				ft_test_p();
+				system(command);
+			}
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+			{
+				ft_test_x();
+				system(command);
+			}
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+			{
+				ft_test_upx();
+				system(command);
+			}
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+			{
+				ft_test_o();
+				system(command);
+			}
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+			{
+				ft_test_u();
+				system(command);
+			}
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+			{
+				ft_test_d();
+				system(command);
+			}
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+			{
+				ft_test_i();
+				system(command);
+			}
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+			{
+				ft_test_j();
+				system(command);
+			}
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+			{
+				ft_test_z();
+				system(command);
+			}
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+			{
+				ft_test_hlhhll();
+				system(command);
+			}
+			else
+				return (0);
+			printf("Press ENTER to continue...\n");
+			scanf("%c",&c);
+			if(c == 13 || c == 10)
+			{
+				ft_test_up_dou();
+				system(command);
+			}
+			else
+				return (0);
 		}
 		else
 			ft_printf("Usage:\n[option] -t {Test} -q {quiet}\n[option] -l {Leaks} -q {quiet}\n");
