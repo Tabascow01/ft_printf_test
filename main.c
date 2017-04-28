@@ -38,7 +38,9 @@ int		main(int argc, char *argv[])
 {
 	FILE	*fic;
 	char	c;
+	int nb;
 
+	nb = 5;
 	fic = NULL;
 	c = 0;
 	if (argc == 3 && ft_strcmp(argv[2], "-q") == 0)
@@ -51,6 +53,7 @@ int		main(int argc, char *argv[])
 	{
 		if (argc >= 2 && ft_strcmp(argv[1], "-t") == 0)
 		{
+/*
 			ft_test_prct();
 			printf("Press ENTER to continue...\n");
 			scanf("%c",&c);
@@ -94,42 +97,49 @@ int		main(int argc, char *argv[])
 				ft_test_u();
 			else
 				return (0);
+*/
 			printf("Press ENTER to continue...\n");
 			scanf("%c",&c);
 			if(c == 13 || c == 10)
-				ft_test_d();
+				ft_test_d(nb);
 			else
 				return (0);
+/*
 			printf("Press ENTER to continue...\n");
 			scanf("%c",&c);
 			if(c == 13 || c == 10)
-				ft_test_i();
+				ft_test_i(nb);
 			else
 				return (0);
+
 			printf("Press ENTER to continue...\n");
 			scanf("%c",&c);
 			if(c == 13 || c == 10)
 				ft_test_j();
 			else
 				return (0);
+
 			printf("Press ENTER to continue...\n");
 			scanf("%c",&c);
 			if(c == 13 || c == 10)
 				ft_test_z();
 			else
 				return (0);
+
 			printf("Press ENTER to continue...\n");
 			scanf("%c",&c);
 			if(c == 13 || c == 10)
 				ft_test_hlhhll();
 			else
 				return (0);
+
 			printf("Press ENTER to continue...\n");
 			scanf("%c",&c);
 			if(c == 13 || c == 10)
 				ft_test_up_dou();
 			else
 				return (0);
+*/
 		}
 		else if (argc >= 2 && ft_strcmp(argv[1], "-l") == 0)
 		{
@@ -216,7 +226,7 @@ int		main(int argc, char *argv[])
 			scanf("%c",&c);
 			if(c == 13 || c == 10)
 			{
-				ft_test_d();
+				ft_test_d(nb);
 				system(command);
 			}
 			else
@@ -225,7 +235,7 @@ int		main(int argc, char *argv[])
 			scanf("%c",&c);
 			if(c == 13 || c == 10)
 			{
-				ft_test_i();
+				ft_test_i(nb);
 				system(command);
 			}
 			else
@@ -269,11 +279,10 @@ int		main(int argc, char *argv[])
 		}
 		else
 			ft_printf("Usage:\n[option] -t {Test} -q {quiet}\n[option] -l {Leaks} -q {quiet}\n");
-		ft_putstr("\n\t/!\\[Done]/!\\\n");
-		if (fic != NULL)
-			fclose(fic);
 	}
 	else
 		ft_putstr("Erreur lors de la manipulation du fichier\n");
+	if (fic != NULL)
+		fclose(fic);
 	return (0);
 }
