@@ -10,16 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "ft_printf.h"
-
-
+#include "ft_printf.h"
 #include <stdio.h>
 #include "limits.h"
+#include <locale.h>
 
 int		main(void)
 {
-	printf("test[%c]\n",42);
-	printf("test[%5c]\n",42);
-	printf("test[%-5c]\n",42);
+	int ftret;
+	int orret;
+	int a = 42;
+	int *p;
+
+	setlocale(LC_ALL,"en_US.UTF-8");
+	p = &a;
+	ftret = ft_printf("Ft[%10R]\n");
+	orret = printf("Or[%%10R]\n");
+	printf("Ft[%d]\nOr[%d]\n",ftret,orret);
 	return (0);
 }
