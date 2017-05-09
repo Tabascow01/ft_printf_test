@@ -6,7 +6,7 @@
 /*   By: mchemakh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/25 06:58:53 by mchemakh          #+#    #+#             */
-/*   Updated: 2017/02/25 10:15:53 by mchemakh         ###   ########.fr       */
+/*   Updated: 2017/05/10 00:20:27 by mchemakh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -272,7 +272,7 @@ static void	ft_flags_zero_sup(void)
 	orret = printf("Or[% 010d]\n", -4242);
 	printf("ft[%d]\nOr[%d]\n--------------------------------------\n", ftret, orret);
 
-	ftret = ft_printf("Ft[% 010dd]\n", -424242);
+	ftret = ft_printf("Ft[% 010d]\n", -424242);
 	orret = printf("Or[% 010d]\n", -424242);
 	printf("ft[%d]\nOr[%d]\n--------------------------------------\n", ftret, orret);
 
