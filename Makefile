@@ -6,7 +6,7 @@
 #    By: mchemakh <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/01/16 04:54:30 by mchemakh          #+#    #+#              #
-#    Updated: 2017/03/19 22:09:29 by mchemakh         ###   ########.fr        #
+#    Updated: 2017/05/19 01:26:17 by mchemakh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,14 +15,14 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
 SRC = main.c 
-SRCS_ANNEXE = ../ft_printf/ft_printf.c
+SRCS_ANNEXE = ../ft_printf_rendu/ft_printf.c
 OBJ = main.o
-OBJ_ANNEXE = ../ft_printf/ft_printf.o
+OBJ_ANNEXE = ../ft_printf_rendu/ft_printf.o
 
 
 LIB_PRINTF = -lftprintf
-LIB_PATH = ../ft_printf/
-INCLUDE_PRINTF = ../ft_printf/includes/
+LIB_PATH = ../ft_printf_rendu/
+INCLUDE_PRINTF = ../ft_printf_rendu/includes/
 
 all: $(NAME)
 
